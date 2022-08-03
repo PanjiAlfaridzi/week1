@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+//echo
+$teks=“Ali Ma’ruf senang belajar PHP!<br>”;
+echo "<h2>PHP mudah digunakan</h2>";
+echo ("Hello world!<br>“);
+echo $teks;
+echo “teks ", “ini", “dibuat", “dengan", “banyak parameter.";
+
+//print
+$txt1 = “Belajar PHP";
+$txt2 = “Fakultas Ilmu Komputer";
+$x = 5;
+$y = 4;
+$ret=print (“Hello World”);
+print “nilai return = $ret”;
+print "<h2>" . $txt1 . "</h2>";
+print “Belajar  Pemrograman Web  di " . $txt2 . "<br>";
+print $x + $y;
+
+//print_r
+$siswa = array (‘Arif', 'Beta', 'Cici'); 
+echo '<pre>'; 
+print_r($siswa); 
+echo '</pre>';
+
+//var_dump()
+$nama = 'Agus';
+var_dump ($nama); // Hasil: string(4) "Agus“
+
+$siswa = array(
+	'nama' => array ('Arif', 'Beta', 'Cici'),
+	'jurusan' 	=> 'Informatika',
+	'semester'=> 1,
+	1 => 'Jakarta',
+	2 => 'Surabaya'
+	);
+		 
+echo '<pre>';  var_dump($siswa); echo '</pre>';
+
+
+?> 
+
+</body>
+</html>
